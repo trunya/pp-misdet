@@ -1,0 +1,11 @@
+data/
+claude/models/
+claude/checkpoints/
+claude/logs/
+claude/submission/
+*.zip
+*.pt
+*.bin
+__pycache__/
+*.pyc
+.env

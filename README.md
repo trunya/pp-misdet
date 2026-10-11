@@ -2,7 +2,7 @@
 
 Official code for our submission to the **PP-MisDet Challenge @ CVPR 2026** on the DGM⁴+ dataset.
 
-> **Val F1: 0.9654** | Trained in ~6 minutes on 4× A100 80GB
+> **Val F1: 0.9654** | Trained on 4× A100 80GB
 
 ## Overview
 

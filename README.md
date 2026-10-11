@@ -37,7 +37,6 @@ PP-MisDet/
 │       ├── infer.sh          # SLURM inference job
 │       ├── qualitative.sh    # SLURM qualitative job
 │       └── setup_env.sh      # Environment setup script
-└── requirements.txt
 ```
 
 ## Setup

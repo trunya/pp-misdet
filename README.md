@@ -25,7 +25,6 @@ We present a multimodal misinformation detection system that jointly addresses t
 
 ```
 PP-MisDet/
-├── claude/
 │   ├── src/
 │   │   ├── dataset.py        # DGM4+ dataloader
 │   │   ├── model.py          # Full model architecture
@@ -38,9 +37,6 @@ PP-MisDet/
 │       ├── infer.sh          # SLURM inference job
 │       ├── qualitative.sh    # SLURM qualitative job
 │       └── setup_env.sh      # Environment setup script
-├── src/                      # Alternative CLIP-based codebase
-├── eda.py                    # Exploratory data analysis
-├── eda_dgm4plus.py           # DGM4+ specific EDA
 └── requirements.txt
 ```
 

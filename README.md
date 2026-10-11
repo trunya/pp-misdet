@@ -58,9 +58,9 @@ pip install open-clip-torch timm einops pandas scikit-learn tqdm Pillow
 ### 2. Download Model Weights
 
 ```bash
-huggingface-cli download Qwen/Qwen2-VL-7B-Instruct --local-dir claude/models/qwen2vl
-huggingface-cli download google/siglip-so400m-patch14-384 --local-dir claude/models/siglip
-huggingface-cli download facebook/dinov2-large --local-dir claude/models/dinov2
+huggingface-cli download Qwen/Qwen2-VL-7B-Instruct --local-dir models/qwen2vl
+huggingface-cli download google/siglip-so400m-patch14-384 --local-dir models/siglip
+huggingface-cli download facebook/dinov2-large --local-dir models/dinov2
 ```
 
 ### 3. Dataset
@@ -83,11 +83,11 @@ data/
 
 ```bash
 # On ASU Sol Supercomputer
-sbatch claude/jobs/train.sh
+sbatch jobs/train.sh
 
 # Or directly
 cd /path/to/PP-MisDet
-torchrun --nproc_per_node=4 claude/src/train.py \
+torchrun --nproc_per_node=4 src/train.py \
     --model_path claude/models/qwen2vl \
     --siglip_path claude/models/siglip \
     --dinov2_path claude/models/dinov2 \
@@ -105,10 +105,10 @@ torchrun --nproc_per_node=4 claude/src/train.py \
 ## Inference
 
 ```bash
-sbatch claude/jobs/infer.sh
+sbatch jobs/infer.sh
 
 # Or directly
-python claude/src/infer.py \
+python src/infer.py \
     --model_path claude/models/qwen2vl \
     --siglip_path claude/models/siglip \
     --dinov2_path claude/models/dinov2 \
